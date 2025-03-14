@@ -8,9 +8,10 @@ receivesAFunction(() => console.log("CallbackFunctionCalled!"));
 
 
 const returnsANamedFunction = () => {
-       return function () {
+       function namedFunction () {
         console.log("Named Function!");
-    };
+    }
+    return namedFunction;
     
 };
 
